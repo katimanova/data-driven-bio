@@ -1,0 +1,5 @@
+1. Kitchen
+2. Living Room
+3. Bedroom
+4. Bathroom
+5. Children's Room
