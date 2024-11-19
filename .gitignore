@@ -1,7 +1,8 @@
 # Файлы для игнора
 hw3/.snakemake
-hw3/test_output/spades/**
-!hw3/test_output/spades/**/*.fasta
+hw3/test_output/spades/SRR31122808/**
+!/hw3/test_output/spades/SRR31122808/scaffolds.fasta
+!/hw3/test_output/spades/SRR31122808/contigs.fasta
 
 
 
