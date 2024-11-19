@@ -1,3 +1,10 @@
+# Файлы для игнора
+hw3/.snakemake
+hw3/test_output/spades/**
+!hw3/test_output/spades/**/*.fasta
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
