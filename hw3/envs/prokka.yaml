@@ -1,0 +1,12 @@
+name: prokka_env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+channel_priority: flexiblec
+dependencies:
+  - perl=5.22
+  - prokka
+  - perl-bioperl
+  - blast=2.9.0
+

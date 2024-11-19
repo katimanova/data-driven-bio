@@ -1,0 +1,117 @@
+import json
+import csv
+
+with open("params.json") as f:
+    params = json.load(f)
+
+# Чтение данных из samples.csv
+samples = []
+with open("samples.csv") as f:
+    samples = list(csv.DictReader(f))
+
+# Создание словаря
+samples_dict = {sample["sample_id"]: sample for sample in samples}
+
+# Правило для запуска всего
+rule all:
+    input:
+        expand("{outdir}/fastqc/{sample}_1_fastqc.html", outdir=params["global_params"]["outdir"], sample=[s["sample_id"] for s in samples]),
+        expand("{outdir}/fastqc/{sample}_2_fastqc.html", outdir=params["global_params"]["outdir"], sample=[s["sample_id"] for s in samples]),
+        expand("{outdir}/spades/{sample}/scaffolds.fasta", outdir=params["global_params"]["outdir"], sample=[s["sample_id"] for s in samples]),
+        expand("{outdir}/quast/{sample}/report.txt", outdir=params["global_params"]["outdir"], sample=[s["sample_id"] for s in samples]),
+        expand("{outdir}/prokka/{sample}/annotation.txt", outdir=params["global_params"]["outdir"], sample=[s["sample_id"] for s in samples]),
+        expand("{outdir}/abricate/{sample}/{db}_results.csv", outdir=params["global_params"]["outdir"], sample=[s["sample_id"] for s in samples], db=[params["abricate"]["databases"]]),
+
+# Правило для FastQC (контроль качества ридов)
+rule fastqc:
+    input:
+        read_1 = lambda wildcards: samples_dict[wildcards.sample]["read_1"],
+        read_2 = lambda wildcards: samples_dict[wildcards.sample]["read_2"]
+    output:
+        html_1 = "{outdir}/fastqc/{sample}_1_fastqc.html",
+        html_2 = "{outdir}/fastqc/{sample}_2_fastqc.html"
+    conda:
+        "envs/fastqc.yaml"
+    params:
+        outdir = params["global_params"]["outdir"]
+    shell:
+        """
+        mkdir -p {params.outdir}/fastqc
+        fastqc {input.read_1} {input.read_2} -o {params.outdir}/fastqc
+        """
+
+# Правило для SPADES (сборка сэмплов)
+rule spades:
+    input:
+        read_1 = lambda wildcards: samples_dict[wildcards.sample]["read_1"],
+        read_2 = lambda wildcards: samples_dict[wildcards.sample]["read_2"]
+    output:
+        scaffolds = "{outdir}/spades/{sample}/scaffolds.fasta"
+    conda:
+        "envs/spades.yaml"
+    params:
+        # параметры
+        outdir = params["global_params"]["outdir"],
+        threads = params["spades"]["threads"],
+        memory = params["spades"]["memory"],
+        # данные, собранные и нет
+        sample = lambda wildcards: wildcards.sample,
+        sample_assembly = lambda wildcards: samples_dict[wildcards.sample]['assembly']
+    shell:
+        """
+        if [ -z "{params.sample_assembly}" ]; then
+            spades.py -1 {input.read_1} -2 {input.read_2} -o {params.outdir}/spades/{wildcards.sample} --threads {params.threads} --memory {params.memory};
+            touch {output.scaffolds};
+        else
+            touch {output.scaffolds};
+        fi
+        """
+
+# Правило для QUAST (контроль качества сборки)
+rule quast:
+    input:
+        scaffolds = lambda wildcards: samples_dict[wildcards.sample]["assembly"] if samples_dict[wildcards.sample]["assembly"] else rules.spades.output.scaffolds
+    output:
+        report = "{outdir}/quast/{sample}/report.txt"
+    conda:
+        "envs/quast.yaml"
+    params:
+        outdir = params["global_params"]["outdir"],
+        threads = params["quast"]["threads"]
+    shell:
+        'quast.py {input.scaffolds} -o {params.outdir}/quast/{wildcards.sample} --threads {params.threads}'
+
+# Правило для Prokka (аннотация сборки)
+rule prokka:
+    input:
+        scaffolds = lambda wildcards: samples_dict[wildcards.sample]["assembly"] if samples_dict[wildcards.sample]["assembly"] else rules.spades.output.scaffolds
+    output:
+        txt = "{outdir}/prokka/{sample}/annotation.txt"
+    params:
+        outdir = params["global_params"]["outdir"],
+        genus = params["prokka"]["genus"]
+    shell:
+        """
+        docker run --rm -v $(pwd):/data staphb/prokka:latest \
+        prokka {input.scaffolds} --genus {params.genus} --prefix annotation --force -o {params.outdir}/prokka/{wildcards.sample}
+        """
+
+# Правило для Abricate (поиск генов устойчивости и вирулентности)
+rule abricate:
+    input:
+        scaffolds = lambda wildcards: samples_dict[wildcards.sample]["assembly"] if samples_dict[wildcards.sample]["assembly"] else rules.spades.output.scaffolds,
+        # файл чтобы abricate гарантированно выполнился в конце
+        prokka_annotation = "{outdir}/prokka/{sample}/annotation.txt"
+    output:
+        resfinder_csv = "{outdir}/abricate/{sample}/resfinder_results.csv"
+    conda:
+        "envs/abricate.yaml"
+    params:
+        outdir = params["global_params"]["outdir"],
+        databases = params["abricate"]["databases"]
+    shell:
+        """
+        mkdir -p {params.outdir}/abricate/{wildcards.sample}
+        abricate --db {params.databases} {input.scaffolds} --csv > {params.outdir}/abricate/{wildcards.sample}/{params.databases}_results.csv
+        touch {output.resfinder_csv}
+        """

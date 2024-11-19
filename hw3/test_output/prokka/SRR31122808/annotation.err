@@ -1,0 +1,287 @@
+Discrepancy Report Results
+
+Summary
+FATAL: MISSING_PROTEIN_ID:13 proteins have invalid IDs.
+DISC_SOURCE_QUALS_ASNDISC:strain (all present, all same)
+DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all same)
+DISC_FEATURE_COUNT:CDS: 13 present
+DISC_COUNT_NUCLEOTIDES:17 nucleotide Bioseqs are present
+FEATURE_LOCATION_CONFLICT:13 features have inconsistent gene locations.
+SHORT_CONTIG:1 contigs are shorter than 200 nt.
+ZERO_BASECOUNT:3 sequences have a zero basecount for a nucleotide
+NO_ANNOTATION:12 bioseqs have no features
+DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
+ONCALLER_COMMENT_PRESENT:17 comment descriptors were found (all same)
+MISSING_GENOMEASSEMBLY_COMMENTS:17 bioseqs are missing GenomeAssembly structured comments
+SHORT_SEQUENCES_200:1 sequences are shorter than 200 bp.
+MOLTYPE_NOT_MRNA:17 molecule types are not set as mRNA.
+TECHNIQUE_NOT_TSA:17 technique are not set as TSA
+MISSING_STRUCTURED_COMMENT:17 sequences do not include structured comments.
+MISSING_PROJECT:30 sequences do not include project.
+DISC_INCONSISTENT_MOLINFO_TECH:Molinfo Technique Report (some missing, all same)
+SEQ_ID_PHRASES:Sequence Ids contain unacceptable phrases (cov_, length, node, paired, or trimmed)
+
+
+Detailed Report
+
+FATAL: DiscRep_ALL:MISSING_PROTEIN_ID::13 proteins have invalid IDs.
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_1 (length 4295)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_2 (length 2595)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_3 (length 1282)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_4 (length 271)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_5 (length 222)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_6 (length 61)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_7 (length 121)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_8 (length 121)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_9 (length 97)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729_1 (length 281)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339_1 (length 82)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610_1 (length 50)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136_1 (length 117)
+
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::strain (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::17 sources have 'strain' for strain
+DiscRep_ALL:DISC_SOURCE_QUALS_ASNDISC::taxname (all present, all same)
+DiscRep_SUB:DISC_SOURCE_QUALS_ASNDISC::17 sources have 'Escherichia species' for taxname
+DiscRep_ALL:DISC_FEATURE_COUNT::CDS: 13 present
+DiscRep_ALL:DISC_COUNT_NUCLEOTIDES::17 nucleotide Bioseqs are present
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:FEATURE_LOCATION_CONFLICT::13 features have inconsistent gene locations.
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	O-acetyl-ADP-ribose deacetylase	NODE_1_length_28270_cov_704.153822:74-12961	JLBIPAKK_00001
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:13246-21033	JLBIPAKK_00002
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:21014-24862	JLBIPAKK_00003
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:24883-25698	JLBIPAKK_00004
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:26001-26669	JLBIPAKK_00005
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:26680-26865	JLBIPAKK_00006
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:26872-27237	JLBIPAKK_00007
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:27372-27737	JLBIPAKK_00008
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_1_length_28270_cov_704.153822:27762-28055	JLBIPAKK_00009
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_2_length_1197_cov_679.246729:23-868	JLBIPAKK_00010
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_4_length_741_cov_1.428339:c484-236	JLBIPAKK_00011
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_7_length_450_cov_0.761610:231-383	JLBIPAKK_00012
+
+DiscRep_SUB:FEATURE_LOCATION_CONFLICT::Coding region xref gene does not exist
+test_output/prokka/SRR31122808/annotation:CDS	hypothetical protein	NODE_11_length_421_cov_0.840136:15-368	JLBIPAKK_00013
+
+DiscRep_ALL:SHORT_CONTIG::1 contigs are shorter than 200 nt.
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:ZERO_BASECOUNT::3 sequences have a zero basecount for a nucleotide
+DiscRep_SUB:ZERO_BASECOUNT::1 sequences have no As
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_SUB:ZERO_BASECOUNT::1 sequences have no Ts
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_SUB:ZERO_BASECOUNT::1 sequences have no Cs
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:NO_ANNOTATION::12 bioseqs have no features
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:DISC_QUALITY_SCORES::Quality scores are missing on all sequences.
+
+DiscRep_ALL:ONCALLER_COMMENT_PRESENT::17 comment descriptors were found (all same)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000:Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka
+
+DiscRep_ALL:MISSING_GENOMEASSEMBLY_COMMENTS::17 bioseqs are missing GenomeAssembly structured comments
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:SHORT_SEQUENCES_200::1 sequences are shorter than 200 bp.
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:MOLTYPE_NOT_MRNA::17 molecule types are not set as mRNA.
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:TECHNIQUE_NOT_TSA::17 technique are not set as TSA
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:MISSING_STRUCTURED_COMMENT::17 sequences do not include structured comments.
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:MISSING_PROJECT::30 sequences do not include project.
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_1 (length 4295)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_2 (length 2595)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_3 (length 1282)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_4 (length 271)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_5 (length 222)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_6 (length 61)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_7 (length 121)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_8 (length 121)
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822_9 (length 97)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729_1 (length 281)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339_1 (length 82)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610_1 (length 50)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136_1 (length 117)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:DISC_INCONSISTENT_MOLINFO_TECH::Molinfo Technique Report (some missing, all same)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::technique (all missing)
+DiscRep_SUB:DISC_INCONSISTENT_MOLINFO_TECH::17 Molinfos are missing field technique
+test_output/prokka/SRR31122808/annotation:NODE_1_length_28270_cov_704.153822 (length 28270)
+test_output/prokka/SRR31122808/annotation:NODE_2_length_1197_cov_679.246729 (length 1197)
+test_output/prokka/SRR31122808/annotation:NODE_3_length_749_cov_228.585209 (length 749)
+test_output/prokka/SRR31122808/annotation:NODE_4_length_741_cov_1.428339 (length 741)
+test_output/prokka/SRR31122808/annotation:NODE_5_length_504_cov_0.384615 (length 504)
+test_output/prokka/SRR31122808/annotation:NODE_6_length_453_cov_0.708589 (length 453)
+test_output/prokka/SRR31122808/annotation:NODE_7_length_450_cov_0.761610 (length 450)
+test_output/prokka/SRR31122808/annotation:NODE_8_length_438_cov_0.797428 (length 438)
+test_output/prokka/SRR31122808/annotation:NODE_9_length_427_cov_0.826667 (length 427)
+test_output/prokka/SRR31122808/annotation:NODE_10_length_425_cov_0.832215 (length 425)
+test_output/prokka/SRR31122808/annotation:NODE_11_length_421_cov_0.840136 (length 421)
+test_output/prokka/SRR31122808/annotation:NODE_12_length_413_cov_0.646853 (length 413)
+test_output/prokka/SRR31122808/annotation:NODE_13_length_406_cov_0.888889 (length 406)
+test_output/prokka/SRR31122808/annotation:NODE_14_length_396_cov_1.561338 (length 396)
+test_output/prokka/SRR31122808/annotation:NODE_15_length_393_cov_0.639098 (length 393)
+test_output/prokka/SRR31122808/annotation:NODE_16_length_267_cov_1492.235714 (length 267)
+test_output/prokka/SRR31122808/annotation:NODE_17_length_128_cov_123.000000 (length 128)
+
+DiscRep_ALL:SEQ_ID_PHRASES::Sequence Ids contain unacceptable phrases (cov_, length, node, paired, or trimmed)
+

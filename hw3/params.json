@@ -1,0 +1,9 @@
+{
+    "global_params": {"outdir": "test_output"},
+    "fastqc": {"threads": 2},
+    "spades": {"threads": 8, "memory": 12000},
+    "quast": {"threads": 2},
+    "prokka": {"genus": "Escherichia"},
+    "abricate": {"databases": "resfinder"}
+  }
+  

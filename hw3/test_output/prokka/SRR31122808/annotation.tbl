@@ -1,0 +1,72 @@
+>Feature NODE_1_length_28270_cov_704.153822
+74	12961	CDS
+			EC_number	3.1.1.106
+			gene	ymdB
+			inference	ab initio prediction:Prodigal:002006
+			inference	protein motif:HAMAP:MF_01205
+			locus_tag	JLBIPAKK_00001
+			product	O-acetyl-ADP-ribose deacetylase
+13246	21033	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00002
+			product	hypothetical protein
+21014	24862	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00003
+			product	hypothetical protein
+24883	25698	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00004
+			product	hypothetical protein
+26001	26669	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00005
+			product	hypothetical protein
+26680	26865	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00006
+			product	hypothetical protein
+26872	27237	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00007
+			product	hypothetical protein
+27372	27737	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00008
+			product	hypothetical protein
+27762	28055	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00009
+			product	hypothetical protein
+>Feature NODE_2_length_1197_cov_679.246729
+23	868	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00010
+			product	hypothetical protein
+>Feature NODE_3_length_749_cov_228.585209
+>Feature NODE_4_length_741_cov_1.428339
+484	236	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00011
+			product	hypothetical protein
+>Feature NODE_5_length_504_cov_0.384615
+>Feature NODE_6_length_453_cov_0.708589
+>Feature NODE_7_length_450_cov_0.761610
+231	383	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00012
+			product	hypothetical protein
+>Feature NODE_8_length_438_cov_0.797428
+>Feature NODE_9_length_427_cov_0.826667
+>Feature NODE_10_length_425_cov_0.832215
+>Feature NODE_11_length_421_cov_0.840136
+15	368	CDS
+			inference	ab initio prediction:Prodigal:002006
+			locus_tag	JLBIPAKK_00013
+			product	hypothetical protein
+>Feature NODE_12_length_413_cov_0.646853
+>Feature NODE_13_length_406_cov_0.888889
+>Feature NODE_14_length_396_cov_1.561338
+>Feature NODE_15_length_393_cov_0.639098
+>Feature NODE_16_length_267_cov_1492.235714
+>Feature NODE_17_length_128_cov_123.000000
