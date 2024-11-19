@@ -1,0 +1,3 @@
+sample_id,read_1,read_2,assembly
+SRR31122807,test_input/SRR31122807/SRR31122807_1.fastq.gz,test_input/SRR31122807/SRR31122807_2.fastq.gz,test_input/SRR31122807/scaffolds.fasta
+SRR31122808,test_input/SRR31122808/SRR31122808_1.fastq.gz,test_input/SRR31122808/SRR31122808_2.fastq.gz,
