@@ -87,7 +87,7 @@ snakemake --use-conda
 ### Пример запуска пайплайна
 
 ```bash
-nextflow main.nf
+nextflow run main.nf
 ```
 
 ---
