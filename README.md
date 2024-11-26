@@ -1,7 +1,6 @@
 # Data Driven Course 🚀
-![GitHub repo size](https://img.shields.io/github/repo-size/katimanova/DD_2024_private?color=blue&label=Repo%20size)
-![GitHub last commit](https://img.shields.io/github/last-commit/katimanova/DD_2024_private?color=blue&label=Last%20commit)
-![GitHub](https://img.shields.io/github/license/katimanova/DD_2024_privatee)
+![GitHub last commit](https://img.shields.io/badge/Last%20commit-November%202024-blue)
+![GitHub](https://img.shields.io/badge/License-MIT-green)
 ![Snakemake](https://img.shields.io/badge/Snakemake-v8.0-blue)
 ![Nextflow](https://img.shields.io/badge/Nextflow-v24.0-orange)
 ![Docker](https://img.shields.io/badge/Docker-27.2.0-blue?logo=docker&logoColor=white)
