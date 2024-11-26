@@ -1,0 +1,162 @@
+- STAGE: Before start
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: before_start
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_start
+- STAGE: Read error correction
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected/configs/config.info
+  config_dir: corrected
+  del_after:
+  - tmp/hammer_3ntgxrlq
+  output_files:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected/corrected.yaml
+  path: /usr/local/bin/spades-hammer
+  short_name: ec_runtool
+- STAGE: corrected reads compression
+  args:
+  - /usr/local/share/spades/spades_pipeline/scripts/compress_all.py
+  - --input_file
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected/corrected.yaml
+  - --ext_python_modules_home
+  - /usr/local/share/spades
+  - --max_threads
+  - '16'
+  - --output_dir
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected
+  - --gzip_output
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/python
+  short_name: ec_compress
+- STAGE: Read error correction
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: ec_finish
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_start
+- STAGE: K21
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K21/configs/config.info
+  config_dir: K21
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/spades-core
+  short_name: k21
+- STAGE: K33
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K33/configs/config.info
+  config_dir: K33
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/spades-core
+  short_name: k33
+- STAGE: K55
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K55/configs/config.info
+  config_dir: K55
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/spades-core
+  short_name: k55
+- STAGE: K77
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K77/configs/config.info
+  config_dir: K77
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/spades-core
+  short_name: k77
+- STAGE: K99
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K99/configs/config.info
+  config_dir: K99
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/spades-core
+  short_name: k99
+- STAGE: K127
+  args:
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/configs/config.info
+  config_dir: K127
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/spades-core
+  short_name: k127
+- STAGE: Copy files
+  args:
+  - /usr/local/share/spades/spades_pipeline/scripts/copy_files.py
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/before_rr.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/before_rr.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/assembly_graph_after_simplification.gfa
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/assembly_graph_after_simplification.gfa
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/final_contigs.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/contigs.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/first_pe_contigs.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/first_pe_contigs.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/strain_graph.gfa
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/strain_graph.gfa
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/scaffolds.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/scaffolds.fasta
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/scaffolds.paths
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/scaffolds.paths
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/assembly_graph_with_scaffolds.gfa
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/assembly_graph_with_scaffolds.gfa
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/assembly_graph.fastg
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/assembly_graph.fastg
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/K127/final_contigs.paths
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/contigs.paths
+  config_dir: ''
+  del_after:
+  - .bin_reads
+  - tmp/spades_9truri1h
+  output_files: []
+  path: /usr/local/bin/python
+  short_name: copy_files
+- STAGE: Assembling
+  args: []
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: 'true'
+  short_name: as_finish
+- STAGE: Breaking scaffolds
+  args:
+  - /usr/local/share/spades/spades_pipeline/scripts/breaking_scaffolds_script.py
+  - --result_scaffolds_filename
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/scaffolds.fasta
+  - --misc_dir
+  - /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/misc
+  - --threshold_for_breaking_scaffolds
+  - '3'
+  config_dir: ''
+  del_after: []
+  output_files: []
+  path: /usr/local/bin/python
+  short_name: bs
+- STAGE: Terminate
+  args: []
+  config_dir: ''
+  del_after:
+  - configs
+  output_files: []
+  path: 'true'
+  short_name: terminate

@@ -1,0 +1,15 @@
+locus_tag	ftype	length_bp	gene	EC_number	COG	product
+PBALMICI_00001	CDS	294				hypothetical protein
+PBALMICI_00002	CDS	366				hypothetical protein
+PBALMICI_00003	CDS	366				hypothetical protein
+PBALMICI_00004	CDS	186				hypothetical protein
+PBALMICI_00005	CDS	669				hypothetical protein
+PBALMICI_00006	CDS	828				hypothetical protein
+PBALMICI_00007	CDS	3822				hypothetical protein
+PBALMICI_00008	CDS	7788				hypothetical protein
+PBALMICI_00009	CDS	13218	ymdB	3.1.1.106		O-acetyl-ADP-ribose deacetylase
+PBALMICI_00010	CDS	846				hypothetical protein
+PBALMICI_00011	CDS	249				hypothetical protein
+PBALMICI_00012	CDS	153				hypothetical protein
+PBALMICI_00013	CDS	354				hypothetical protein
+PBALMICI_00014	CDS	330				hypothetical protein

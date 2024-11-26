@@ -1,0 +1,95 @@
+нояб.-26 16:24:59.031 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -resume
+нояб.-26 16:24:59.185 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.1
+нояб.-26 16:24:59.241 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/anastasia/.nextflow/plugins; core-plugins: nf-amazon@2.9.1,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.2,nf-tower@1.9.3,nf-wave@1.7.3
+нояб.-26 16:24:59.289 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+нояб.-26 16:24:59.292 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+нояб.-26 16:24:59.297 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+нояб.-26 16:24:59.321 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+нояб.-26 16:24:59.379 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/nextflow.config
+нояб.-26 16:24:59.386 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/nextflow.config
+нояб.-26 16:24:59.460 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/anastasia/.nextflow/secrets/store.json
+нояб.-26 16:24:59.467 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@57aa341b] - activable => nextflow.secret.LocalSecretsProvider@57aa341b
+нояб.-26 16:24:59.494 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+нояб.-26 16:25:00.375 [main] WARN  nextflow.config.ConfigBuilder - It appears you have never run this project before -- Option `-resume` is ignored
+нояб.-26 16:25:00.414 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+нояб.-26 16:25:00.458 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [modest_bose] DSL2 - revision: 80ddc28300
+нояб.-26 16:25:00.460 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+нояб.-26 16:25:00.460 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+нояб.-26 16:25:00.575 [main] DEBUG nextflow.Session - Session UUID: 730b35f1-43b8-4c8e-bf4d-c8b689090a8b
+нояб.-26 16:25:00.575 [main] DEBUG nextflow.Session - Run name: modest_bose
+нояб.-26 16:25:00.576 [main] DEBUG nextflow.Session - Executor pool size: 8
+нояб.-26 16:25:00.594 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+нояб.-26 16:25:00.606 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+нояб.-26 16:25:00.670 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.1 build 5930
+  Created: 18-11-2024 12:21 UTC (15:21 MSD)
+  System: Mac OS X 15.1.1
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.13+7-b1751.21
+  Encoding: UTF-8 (UTF-8)
+  Process: 27110@MacBook-Pro.local [127.0.0.1]
+  CPUs: 8 - Mem: 16 GB (30.4 MB) - Swap: 8 GB (1.6 GB)
+нояб.-26 16:25:00.696 [main] DEBUG nextflow.Session - Work-dir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work [Mac OS X]
+нояб.-26 16:25:00.697 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/bin
+нояб.-26 16:25:00.721 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+нояб.-26 16:25:00.743 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+нояб.-26 16:25:00.785 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+нояб.-26 16:25:00.810 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+нояб.-26 16:25:00.992 [main] DEBUG nextflow.Session - Session start
+нояб.-26 16:25:01.999 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+нояб.-26 16:25:02.279 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FastQC` matches process FastQC
+нояб.-26 16:25:02.310 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+нояб.-26 16:25:02.311 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+нояб.-26 16:25:02.326 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+нояб.-26 16:25:02.345 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+нояб.-26 16:25:02.351 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+нояб.-26 16:25:02.444 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SPAdes` matches process SPAdes
+нояб.-26 16:25:02.446 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+нояб.-26 16:25:02.447 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+нояб.-26 16:25:02.474 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:QUAST` matches process QUAST
+нояб.-26 16:25:02.475 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+нояб.-26 16:25:02.476 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+нояб.-26 16:25:02.485 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:Prokka` matches process Prokka
+нояб.-26 16:25:02.487 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+нояб.-26 16:25:02.487 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+нояб.-26 16:25:02.492 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: QUAST, SPAdes, Prokka, FastQC
+нояб.-26 16:25:02.508 [main] WARN  nextflow.Session - There's no process matching config selector: Abricate
+нояб.-26 16:25:02.511 [main] DEBUG nextflow.Session - Igniting dataflow network (5)
+нояб.-26 16:25:02.525 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > FastQC
+нояб.-26 16:25:02.525 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SPAdes
+нояб.-26 16:25:02.527 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > QUAST
+нояб.-26 16:25:02.528 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > Prokka
+нояб.-26 16:25:02.530 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_e053915b3ea7b7fd: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/main.nf
+нояб.-26 16:25:02.531 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+нояб.-26 16:25:02.531 [main] DEBUG nextflow.Session - Session await
+нояб.-26 16:25:02.737 [Actor Thread 9] DEBUG nextflow.util.HashBuilder - Unable to get file attributes file: /null -- Cause: java.nio.file.NoSuchFileException: /null
+нояб.-26 16:25:02.845 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+нояб.-26 16:25:02.849 [Task submitter] INFO  nextflow.Session - [66/543986] Submitted process > Prokka (Prokka on SRR31122807)
+нояб.-26 16:25:02.867 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+нояб.-26 16:25:02.867 [Task submitter] INFO  nextflow.Session - [fd/3644d0] Submitted process > FastQC (FASTQC on SRR31122808)
+нояб.-26 16:25:02.877 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+нояб.-26 16:25:02.879 [Task submitter] INFO  nextflow.Session - [cb/d5b9eb] Submitted process > QUAST (QUAST on SRR31122807)
+нояб.-26 16:25:11.684 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: Prokka (Prokka on SRR31122807); status: COMPLETED; exit: 0; error: -; workDir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/66/543986c3e6d53de8f32734275ab2b9]
+нояб.-26 16:25:11.686 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+нояб.-26 16:25:11.780 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+нояб.-26 16:25:12.159 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: QUAST (QUAST on SRR31122807); status: COMPLETED; exit: 0; error: -; workDir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/cb/d5b9eb40371a6b1bd928d7d4c5a379]
+нояб.-26 16:25:24.003 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: FastQC (FASTQC on SRR31122808); status: COMPLETED; exit: 0; error: -; workDir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd]
+нояб.-26 16:25:24.081 [Actor Thread 8] WARN  nextflow.processor.TaskProcessor - Input tuple does not match tuple declaration in process `SPAdes` -- offending value: [SRR31122808, /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd/SRR31122808_1.fastq.gz, /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd/SRR31122808_2.fastq.gz, [/Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd/test_output/fastqc/SRR31122808/SRR31122808_1_fastqc.html, /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd/test_output/fastqc/SRR31122808/SRR31122808_1_fastqc.zip, /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd/test_output/fastqc/SRR31122808/SRR31122808_2_fastqc.html, /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/fd/3644d0cc567823f4bf8dcc1f1439fd/test_output/fastqc/SRR31122808/SRR31122808_2_fastqc.zip]]
+нояб.-26 16:25:24.148 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+нояб.-26 16:25:24.149 [Task submitter] INFO  nextflow.Session - [e9/e85381] Submitted process > SPAdes (SPAdes on SRR31122808)
+нояб.-26 16:29:24.230 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: SPAdes (SPAdes on SRR31122808); status: COMPLETED; exit: 0; error: -; workDir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/e9/e85381e9c69236ecc755d20619dc92]
+нояб.-26 16:29:24.882 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+нояб.-26 16:29:24.884 [Task submitter] INFO  nextflow.Session - [7b/d77582] Submitted process > Prokka (Prokka on SRR31122808)
+нояб.-26 16:29:24.987 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+нояб.-26 16:29:24.988 [Task submitter] INFO  nextflow.Session - [4c/98eeb2] Submitted process > QUAST (QUAST on SRR31122808)
+нояб.-26 16:29:34.648 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: QUAST (QUAST on SRR31122808); status: COMPLETED; exit: 0; error: -; workDir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/4c/98eeb2135cfebb0fd77c2667644b3b]
+нояб.-26 16:29:35.001 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: Prokka (Prokka on SRR31122808); status: COMPLETED; exit: 0; error: -; workDir: /Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/7b/d77582c4d46d1f7b7da6a32dcd5c7c]
+нояб.-26 16:29:35.023 [main] DEBUG nextflow.Session - Session await > all processes finished
+нояб.-26 16:29:35.163 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+нояб.-26 16:29:35.165 [main] DEBUG nextflow.Session - Session await > all barriers passed
+нояб.-26 16:29:35.279 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+нояб.-26 16:29:35.284 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+нояб.-26 16:29:35.357 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=6; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=17m 57s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=6; peakMemory=16 GB; ]
+нояб.-26 16:29:35.454 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+нояб.-26 16:29:35.552 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+нояб.-26 16:29:35.553 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
