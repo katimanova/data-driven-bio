@@ -1,9 +1,0 @@
-- "left reads":
-  - "/Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected/SRR31122808_1.fastq.00.0_0.cor.fastq.gz"
-  "number": !!int "1"
-  "orientation": "fr"
-  "right reads":
-  - "/Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected/SRR31122808_2.fastq.00.0_0.cor.fastq.gz"
-  "single reads":
-  - "/Users/anastasia/data_driven_2024/DD_2024_private/hw4/work/c7/7b83e292fd8e07f6b537f19e6f0e81/test_output/spades/SRR31122808/corrected/SRR31122808__unpaired.00.0_0.cor.fastq.gz"
-  "type": "paired-end"

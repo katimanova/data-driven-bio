@@ -1,0 +1,147 @@
+[10:27:14] This is prokka 1.14.6
+[10:27:14] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[10:27:14] Homepage is https://github.com/tseemann/prokka
+[10:27:14] Local time is Mon Dec  2 10:27:14 2024
+[10:27:14] You are not telling me who you are!
+[10:27:14] Operating system is linux
+[10:27:14] You have BioPerl 1.007002
+[10:27:14] System has 8 cores.
+[10:27:14] Will use maximum of 8 cores.
+[10:27:14] Annotating as >>> Bacteria <<<
+[10:27:14] Generating locus_tag from 'scaffolds.fasta' contents.
+[10:27:14] Setting --locustag KLNCHKNE from MD5 457c147e2125243d5bd30f76c5e4336a
+[10:27:14] Re-using existing --outdir ./test_output/prokka/SRR31122807
+[10:27:14] Using filename prefix: SRR31122807.XXX
+[10:27:14] Setting HMMER_NCPU=1
+[10:27:14] Writing log to: ./test_output/prokka/SRR31122807/SRR31122807.log
+[10:27:14] Command: /prokka-1.14.6/bin/prokka --force -o ./test_output/prokka/SRR31122807 --prefix SRR31122807 scaffolds.fasta --genus Escherichia
+[10:27:14] Appending to PATH: /prokka-1.14.6/bin/../binaries/linux
+[10:27:14] Appending to PATH: /prokka-1.14.6/bin/../binaries/linux/../common
+[10:27:14] Appending to PATH: /prokka-1.14.6/bin
+[10:27:14] Looking for 'aragorn' - found /prokka-1.14.6/binaries/linux/aragorn
+[10:27:14] Determined aragorn version is 001002 from 'ARAGORN v1.2.38 Dean Laslett'
+[10:27:14] Looking for 'barrnap' - found /barrnap-0.9/bin/barrnap
+[10:27:14] Determined barrnap version is 000009 from 'barrnap 0.9'
+[10:27:14] Looking for 'blastp' - found /ncbi-blast-2.9.0+/bin/blastp
+[10:27:14] Determined blastp version is 002009 from 'blastp: 2.9.0+'
+[10:27:14] Looking for 'cmpress' - found /prokka-1.14.6/binaries/linux/cmpress
+[10:27:14] Determined cmpress version is 001001 from '# INFERNAL 1.1.2 (July 2016)'
+[10:27:14] Looking for 'cmscan' - found /prokka-1.14.6/binaries/linux/cmscan
+[10:27:14] Determined cmscan version is 001001 from '# INFERNAL 1.1.2 (July 2016)'
+[10:27:14] Looking for 'egrep' - found /bin/egrep
+[10:27:14] Looking for 'find' - found /usr/bin/find
+[10:27:14] Looking for 'grep' - found /bin/grep
+[10:27:14] Looking for 'hmmpress' - found /usr/bin/hmmpress
+[10:27:14] Determined hmmpress version is 003001 from '# HMMER 3.1b2 (February 2015); http://hmmer.org/'
+[10:27:14] Looking for 'hmmscan' - found /usr/bin/hmmscan
+[10:27:14] Determined hmmscan version is 003001 from '# HMMER 3.1b2 (February 2015); http://hmmer.org/'
+[10:27:14] Looking for 'java' - found /usr/bin/java
+[10:27:14] Looking for 'makeblastdb' - found /ncbi-blast-2.9.0+/bin/makeblastdb
+[10:27:14] Determined makeblastdb version is 002009 from 'makeblastdb: 2.9.0+'
+[10:27:14] Looking for 'minced' - found /prokka-1.14.6/binaries/common/minced
+[10:27:15] Determined minced version is 002000 from 'minced 0.2.0'
+[10:27:15] Looking for 'parallel' - found /prokka-1.14.6/binaries/common/parallel
+[10:27:15] Determined parallel version is 20150122 from 'GNU parallel 20150122'
+[10:27:15] Looking for 'prodigal' - found /prokka-1.14.6/binaries/linux/prodigal
+[10:27:15] Determined prodigal version is 002006 from 'Prodigal V2.6.3: February, 2016'
+[10:27:15] Looking for 'prokka-genbank_to_fasta_db' - found /prokka-1.14.6/bin/prokka-genbank_to_fasta_db
+[10:27:15] Looking for 'sed' - found /bin/sed
+[10:27:15] Looking for 'tbl2asn' - found /usr/bin/tbl2asn
+[10:27:15] Determined tbl2asn version is 025008 from 'tbl2asn 25.8   arguments:'
+[10:27:15] Using genetic code table 11.
+[10:27:15] Loading and checking input file: scaffolds.fasta
+[10:27:15] Wrote 79 contigs totalling 78723 bp.
+[10:27:15] Predicting tRNAs and tmRNAs
+[10:27:15] Running: aragorn -l -gc11  -w \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.fna
+[10:27:15] Found 0 tRNAs
+[10:27:15] Predicting Ribosomal RNAs
+[10:27:15] Running Barrnap with 8 threads
+[10:27:16] Found 0 rRNAs
+[10:27:16] Skipping ncRNA search, enable with --rfam if desired.
+[10:27:16] Total of 0 tRNA + rRNA features
+[10:27:16] Searching for CRISPR repeats
+[10:27:16] Found 0 CRISPRs
+[10:27:16] Predicting coding sequences
+[10:27:16] Contigs total 78723 bp, so using meta mode
+[10:27:16] Running: prodigal -i \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.fna -c -m -g 11 -p meta -f sco -q
+[10:27:17] Found 40 CDS
+[10:27:17] Connecting features back to sequences
+[10:27:17] Not using genus-specific database. Try --usegenus to enable it.
+[10:27:17] Annotating CDS, please be patient.
+[10:27:17] Will use 8 CPUs for similarity searching.
+
+--------------------- WARNING ---------------------
+MSG: Seq [NODE_13_length_810_cov_0.941435]: Terminator codon inside CDS!
+---------------------------------------------------
+[10:27:17] There are still 40 unannotated CDS left (started with 40)
+[10:27:17] Will use blast to search against /prokka-1.14.6/db/kingdom/Bacteria/IS with 8 CPUs
+[10:27:17] Running: cat \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.IS\.tmp\.8\.faa | parallel --gnu --plain -j 8 --block 737 --recstart '>' --pipe blastp -query - -db /prokka-1.14.6/db/kingdom/Bacteria/IS -evalue 1e-30 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.IS\.tmp\.8\.blast 2> /dev/null
+[10:27:18] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.IS.tmp.8.faa
+[10:27:18] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.IS.tmp.8.blast
+
+--------------------- WARNING ---------------------
+MSG: Seq [NODE_13_length_810_cov_0.941435]: Terminator codon inside CDS!
+---------------------------------------------------
+[10:27:18] There are still 40 unannotated CDS left (started with 40)
+[10:27:18] Will use blast to search against /prokka-1.14.6/db/kingdom/Bacteria/AMR with 8 CPUs
+[10:27:18] Running: cat \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.AMR\.tmp\.8\.faa | parallel --gnu --plain -j 8 --block 737 --recstart '>' --pipe blastp -query - -db /prokka-1.14.6/db/kingdom/Bacteria/AMR -evalue 9.99999999999999e-301 -qcov_hsp_perc 90 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.AMR\.tmp\.8\.blast 2> /dev/null
+[10:27:19] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.AMR.tmp.8.faa
+[10:27:19] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.AMR.tmp.8.blast
+
+--------------------- WARNING ---------------------
+MSG: Seq [NODE_13_length_810_cov_0.941435]: Terminator codon inside CDS!
+---------------------------------------------------
+[10:27:20] There are still 40 unannotated CDS left (started with 40)
+[10:27:20] Will use blast to search against /prokka-1.14.6/db/kingdom/Bacteria/sprot with 8 CPUs
+[10:27:20] Running: cat \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.sprot\.tmp\.8\.faa | parallel --gnu --plain -j 8 --block 737 --recstart '>' --pipe blastp -query - -db /prokka-1.14.6/db/kingdom/Bacteria/sprot -evalue 1e-09 -qcov_hsp_perc 80 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.sprot\.tmp\.8\.blast 2> /dev/null
+[10:27:23] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.sprot.tmp.8.faa
+[10:27:23] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.sprot.tmp.8.blast
+
+--------------------- WARNING ---------------------
+MSG: Seq [NODE_13_length_810_cov_0.941435]: Terminator codon inside CDS!
+---------------------------------------------------
+[10:27:23] There are still 40 unannotated CDS left (started with 40)
+[10:27:23] Will use hmmer3 to search against /prokka-1.14.6/db/hmm/HAMAP.hmm with 8 CPUs
+[10:27:23] Running: cat \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.HAMAP\.hmm\.tmp\.8\.faa | parallel --gnu --plain -j 8 --block 737 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-09 --cpu 1 /prokka-1.14.6/db/hmm/HAMAP.hmm /dev/stdin > \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.HAMAP\.hmm\.tmp\.8\.hmmer3 2> /dev/null
+[10:27:25] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.HAMAP.hmm.tmp.8.faa
+[10:27:25] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.HAMAP.hmm.tmp.8.hmmer3
+[10:27:25] Labelling remaining 40 proteins as 'hypothetical protein'
+[10:27:25] Found 0 unique /gene codes.
+[10:27:25] Fixed 0 colliding /gene names.
+[10:27:25] Adding /locus_tag identifiers
+[10:27:25] Assigned 40 locus_tags to CDS and RNA features.
+[10:27:25] Writing outputs to ./test_output/prokka/SRR31122807/
+
+--------------------- WARNING ---------------------
+MSG: Seq [KLNCHKNE_00032]: Terminator codon inside CDS!
+---------------------------------------------------
+[10:27:25] Generating annotation statistics file
+[10:27:25] Generating Genbank and Sequin files
+[10:27:25] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.14.6 from https://github.com/tseemann/prokka' -Z \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.err -i \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.fsa 2> /dev/null
+[10:27:26] Deleting unwanted file: ./test_output/prokka/SRR31122807/errorsummary.val
+[10:27:26] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.dr
+[10:27:26] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.fixedproducts
+[10:27:26] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.ecn
+[10:27:26] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.val
+[10:27:26] Repairing broken .GBK output that tbl2asn produces...
+[10:27:26] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.gbf > \.\/test_output\/prokka\/SRR31122807\/SRR31122807\.gbk
+[10:27:26] Deleting unwanted file: ./test_output/prokka/SRR31122807/SRR31122807.gbf
+[10:27:26] Output files:
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.faa
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.fsa
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.gbk
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.ffn
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.log
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.err
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.tsv
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.fna
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.sqn
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.tbl
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.gff
+[10:27:26] ./test_output/prokka/SRR31122807/SRR31122807.txt
+[10:27:26] Annotation finished successfully.
+[10:27:26] Walltime used: 0.20 minutes
+[10:27:26] If you use this result please cite the Prokka paper:
+[10:27:26] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[10:27:26] Type 'prokka --citation' for more details.
+[10:27:26] Thank you, come again.

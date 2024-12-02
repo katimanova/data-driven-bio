@@ -17,6 +17,11 @@ samples_channel = Channel
 with_assembly = samples_channel.filter { sample_id, read_1, read_2, assembly -> assembly != '/null' && assembly.exists() }
 without_assembly = samples_channel.filter { sample_id, read_1, read_2, assembly -> assembly == '/null' || !assembly.exists() }
 
+println "SPAdes memory: ${params.spades.memory} MB"
+println "SPAdes threads: ${params.spades.threads}"
+println "FastQC threads: ${params.fastqc.threads}"
+println "QUAST threads: ${params.quast.threads}"
+
 process FastQC {
     tag "FASTQC on $sample_id"
 
@@ -88,7 +93,7 @@ process Prokka {
     script:
     """
     mkdir -p ./test_output/prokka/${sample_id}/
-    prokka --force -o ./test_output/prokka/${sample_id} --prefix ${sample_id} ${assembly} --genus 'Escherichia'
+    prokka --force -o ./test_output/prokka/${sample_id} --prefix ${sample_id} ${assembly} --genus '${params.prokka.genus}'
     """
 }
 
@@ -107,7 +112,7 @@ process Abricate {
     script:
     """
     mkdir -p ./test_output/abricate/
-    abricate --db resfinder ${annotation} > test_output/abricate/${sample_id}_abricate_results.txt
+    abricate --db ${params.abricate.databases} ${annotation} > test_output/abricate/${sample_id}_abricate_results.txt
     """
 }
 

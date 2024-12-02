@@ -1,1 +1,1 @@
-2024-11-26 17:25:02	7m 28s	special_curie	OK	a80321db5c08f422a3401cab530e7269	a71ee6e6-1361-46ba-ac86-0c718e3eeb3f	nextflow run main.nf
+2024-12-02 13:27:08	7m 21s	mighty_minsky	OK	05d47f669f45b5b7399a2685d0e1921c	7f4a55e6-e30c-4ee2-8459-350c721e4e54	nextflow run main.nf -with-docker -with-conda -process.cpus=4 -process.memory=4G -resume
